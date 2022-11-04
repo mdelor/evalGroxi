@@ -7,9 +7,9 @@ html {
     --vertclair : #a0cb23;
     --vertfonce : #14462d;
     --rougehot : #da485b;
-    --turquoise : #92ddd8 to #95dcd6;
-    --orange : #fb9823 to #f58313;
-    --vert : #afe223 to #a0cb23;
+    --turquoise : linear-gradient(135deg,#92ddd8,#95dcd6);
+    --orange : linear-gradient(135deg,#fb9823,#f58313);
+    --vert : linear-gradient(135deg,#afe223,#a0cb23);
     --gris: #f6fafb;
     --jaune: #fffc00;
 }
@@ -25,6 +25,9 @@ a {
 /* end page properties */
 
 /* Helpers */
+.textcenter {
+    text-align: center;
+}
 
 .marges {
     margin: 0 21%;
@@ -34,7 +37,7 @@ a {
     display: flex;
 }
 
-.flex-column {
+.column {
     flex-direction: column;
 }
 
@@ -50,8 +53,16 @@ a {
     justify-content: center;
 }
 
+.justifyend {
+    justify-content: flex-end;
+}
+
 .aligncenter {
     align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 .nostyle {
@@ -60,8 +71,8 @@ a {
 
 .btn1{
     color:#fff;
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 15px 20px;
+    font-size: 1.1em;
     text-transform: uppercase;
 }
 
@@ -78,25 +89,20 @@ a {
 /* Headbar */
 .bgfruit {
     background-image: url('../img/bg_fruit.png');
-    width: 552px;
-    height: 571px;
+    width: 336px;
+    height: 442px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top:0;
+    left:0;
 }
 
 header {
     background: url(../img/banner.jpg);
-    height: 968px;
+    height: 900px;
 }
 
 .headbar nav {
     width: 40%;
-}
-
-/*pour réaligner le logo au bord gauche de son conteneur */
-.headbar img{
-    margin-left: -37px;
 }
 
 .headbar nav li{
@@ -132,11 +138,92 @@ h1 {
 
 .banner {
     width: 30%;
+    height:70%;
 }
+
 
 .banner div:first-of-type p:first-of-type{
     color: var(--vertclair);
 }
 
+.banner div:first-of-type p {
+    font-size: 1.5em;
+}
 
+.banner div:nth-of-type(2) {
+    width: 70%;
+}
 
+/*end of banner */
+
+/* start main content */
+
+/*début trois photos */
+.mainbar {
+    color:#fff;
+    align-items: center;
+    height:500px;
+}
+
+.box {
+    width: 30%;
+    aspect-ratio: 1.4;
+}
+
+.box div:first-of-type{
+    width: 40%;
+
+}
+
+.box div:nth-last-child(1) {
+    width: 60%;
+    height: 100%;
+    align-self: flex-end;
+    background-repeat: no-repeat;
+}
+
+.mainbar p {
+    text-transform: uppercase;
+}
+
+.turquoise {
+    background: var(--turquoise);
+}
+
+.turquoise div:nth-last-child(1) {
+    background-image: url(/assets/img/legumes.png);
+}
+
+.orange {
+    background: var(--orange);
+}
+
+.orange div:nth-last-child(1) {
+    background-image: url(/assets/img/boisson.png);
+}
+
+.vert {
+    background: var(--vert);
+}
+
+.vert div:nth-last-child(1) {
+    background-image: url(/assets/img/beaute.png);
+}
+
+/* fin trois photos */
+
+/*début produits populaires */
+
+.populaires {
+    width:25%;
+    margin:auto;
+}
+
+.populaires p {
+    color:var(--vertclair);
+}
+
+.populaires h3 {
+    font-size:2em;
+
+}
