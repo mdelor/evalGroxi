@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* page properties */
+
 html {
     font-size: 16px;
     --vertclair : #a0cb23;
@@ -12,6 +13,7 @@ html {
     --vert : linear-gradient(135deg,#afe223,#a0cb23);
     --gris: #f6fafb;
     --jaune: #fffc00;
+    --etoile: #fdcc43;
 }
 
 body {
@@ -22,9 +24,11 @@ body {
 a {
     text-decoration: none;
 }
+
 /* end page properties */
 
 /* Helpers */
+
 .textcenter {
     text-align: center;
 }
@@ -61,6 +65,11 @@ a {
     align-items: center;
 }
 
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
@@ -84,9 +93,19 @@ a {
     background: var(--vertfonce);
 }
 
+.barre {
+    text-decoration: line-through;
+    color:rgb(85, 85, 85);
+}
+
+.verttext {
+    color: var(--vertclair);
+}
+
 /* end helpers */
 
 /* Headbar */
+
 .bgfruit {
     background-image: url('../img/bg_fruit.png');
     width: 336px;
@@ -127,6 +146,7 @@ header {
     background: var(--vertclair);
     color: #fff;
 }
+
 /*end headbar*/
 
 /*banner */
@@ -159,6 +179,7 @@ h1 {
 /* start main content */
 
 /*début trois photos */
+
 .mainbar {
     color:#fff;
     align-items: center;
@@ -180,6 +201,7 @@ h1 {
     height: 100%;
     align-self: flex-end;
     background-repeat: no-repeat;
+
 }
 
 .mainbar p {
@@ -225,5 +247,48 @@ h1 {
 
 .populaires h3 {
     font-size:2em;
+}
 
+.etoiles {
+    list-style-type: none;
+    color:var(--etoile);
+}
+
+.box2 {
+    background-color: var(--gris);
+    width: 300px;
+}
+
+/*fin produits populaires */
+
+/*début blocfinal */
+
+.foot {
+    margin:100px 21%;
+    color: #fff;
+    border: 1px solid var(--jaune);
+    background-color: var(--vertclair);
+    padding: 10px;
+}
+
+.foot h3 {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.panier {
+    position: relative;
+    top:10px;
+    left:73px;
+    border: 1px solid #000;
+    border-radius:50% 0 0 0;
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    width: 300px;
+    background:url(/assets/img/panier.jpg);
+}
+
+.promo {
+    
 }
