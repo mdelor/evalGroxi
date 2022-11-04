@@ -1,0 +1,19 @@
+/* Google Fonts Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Page properties */
+html {
+    font-size: 16px;
+    --vertclair : #a0cb23;
+    --vertfonce : #14462d;
+    --rougehot : #da485b;
+    --turquoise : #92ddd8 to #95dcd6;
+    --orange : #fb9823 to #f58313;
+    --vert : #afe223 to #a0cb23;
+    --gris: #f6fafb;
+    --jaune: #fffc00;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
