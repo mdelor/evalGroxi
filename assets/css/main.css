@@ -268,24 +268,36 @@ h1 {
 .box2 {
     background-color: var(--gris);
     width: 350px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 .box2 img {
     padding-top: 15px;
-    height:150px;
+    height: 150px;
 }
 
 .heart {
     position: relative;
-    top:10px;
+    top: 10px;
     left: 45%;
     font-size: 0.8em;
     width: 30px;
     height: 30px;
     color: grey;
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 50%;
+}
+
+.hot {
+    position: relative;
+    margin-top: 0;
+    padding: 5px;
+    top: 0;
+    right: 45%;
+    font-size: 1.1em;
+    width: fit-content;
+    background: var(--rougehot);
+    color: #fff;
 }
 
 /*end popular products*/
