@@ -186,9 +186,9 @@ h1 {
 
 /*end of banner */
 
-/* start main content */
+/*start main content */
 
-/*début trois photos */
+/*start three pictures*/
 
 .mainbar {
     color: #fff;
@@ -242,9 +242,9 @@ h1 {
     background-image: url(/assets/img/beaute.png);
 }
 
-/* fin trois photos */
+/*end three pictures*/
 
-/*début produits populaires */
+/*start popular products*/
 
 .populaires {
     width: 25%;
@@ -261,6 +261,7 @@ h1 {
 
 .etoiles {
     list-style-type: none;
+    padding: 0;
     color: var(--etoile);
 }
 
@@ -269,9 +270,9 @@ h1 {
     width: 300px;
 }
 
-/*fin produits populaires */
+/*end popular products*/
 
-/*début blocfinal */
+/*start final bloc*/
 
 .foot {
     margin: 100px 21%;
@@ -304,3 +305,5 @@ h1 {
     color: var(--jaune);
     font-weight: 400;
 }
+
+/* end final block */
