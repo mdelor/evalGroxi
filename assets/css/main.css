@@ -5,12 +5,14 @@
 
 html {
     font-size: 16px;
-    --vertclair : #a0cb23;
-    --vertfonce : #14462d;
-    --rougehot : #da485b;
-    --turquoise : linear-gradient(135deg,#92ddd8,#95dcd6);
-    --orange : linear-gradient(135deg,#fb9823,#f58313);
-    --vert : linear-gradient(135deg,#afe223,#a0cb23);
+    --vertclair: #a0cb23;
+    --vertclaira: rgba(160, 203, 35, 0.5);
+    --vertfonce: #14462d;
+    --vertfoncea: rgba(20, 70, 45, 0.25);
+    --rougehot: #da485b;
+    --turquoise: linear-gradient(135deg, #92ddd8, #95dcd6);
+    --orange: linear-gradient(135deg, #fb9823, #f58313);
+    --vert: linear-gradient(135deg, #afe223, #a0cb23);
     --gris: #f6fafb;
     --jaune: #fffc00;
     --etoile: #fdcc43;
@@ -78,8 +80,8 @@ a {
     list-style-type: none;
 }
 
-.btn1{
-    color:#fff;
+.btn1 {
+    color: #fff;
     padding: 15px 20px;
     font-size: 1.1em;
     text-transform: uppercase;
@@ -89,13 +91,21 @@ a {
     background: var(--vertclair);
 }
 
+.vertclair:hover {
+    box-shadow: var(--vertfoncea) 0px 30px 60px -12px inset, var(--vertfoncea) 0px 18px 36px -18px inset;
+}
+
 .vertfonce {
     background: var(--vertfonce);
 }
 
+.vertfonce:hover {
+    box-shadow: var(--vertclaira) 0px 30px 60px -12px inset, var(--vertclaira) 0px 18px 36px -18px inset;
+}
+
 .barre {
     text-decoration: line-through;
-    color:rgb(85, 85, 85);
+    color: rgb(85, 85, 85);
 }
 
 .verttext {
@@ -111,8 +121,8 @@ a {
     width: 336px;
     height: 442px;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
 
 header {
@@ -124,11 +134,11 @@ header {
     width: 40%;
 }
 
-.headbar nav li{
+.headbar nav li {
     cursor: pointer;
 }
 
-.headbar nav li:hover{
+.headbar nav li:hover {
     background: #000;
     color: #fff;
 }
@@ -141,7 +151,7 @@ header {
     color: var(--vertclair);
 }
 
-.headbar i:hover{
+.headbar i:hover {
     cursor: pointer;
     background: var(--vertclair);
     color: #fff;
@@ -158,11 +168,11 @@ h1 {
 
 .banner {
     width: 30%;
-    height:70%;
+    height: 70%;
 }
 
 
-.banner div:first-of-type p:first-of-type{
+.banner div:first-of-type p:first-of-type {
     color: var(--vertclair);
 }
 
@@ -181,9 +191,9 @@ h1 {
 /*début trois photos */
 
 .mainbar {
-    color:#fff;
+    color: #fff;
     align-items: center;
-    height:500px;
+    height: 500px;
 }
 
 .box {
@@ -191,7 +201,7 @@ h1 {
     aspect-ratio: 1.4;
 }
 
-.box div:first-of-type{
+.box div:first-of-type {
     width: 40%;
 
 }
@@ -237,21 +247,21 @@ h1 {
 /*début produits populaires */
 
 .populaires {
-    width:25%;
-    margin:auto;
+    width: 25%;
+    margin: auto;
 }
 
 .populaires p {
-    color:var(--vertclair);
+    color: var(--vertclair);
 }
 
 .populaires h3 {
-    font-size:2em;
+    font-size: 2em;
 }
 
 .etoiles {
     list-style-type: none;
-    color:var(--etoile);
+    color: var(--etoile);
 }
 
 .box2 {
@@ -264,7 +274,7 @@ h1 {
 /*début blocfinal */
 
 .foot {
-    margin:100px 21%;
+    margin: 100px 21%;
     color: #fff;
     border: 1px solid var(--jaune);
     background-color: var(--vertclair);
@@ -278,19 +288,19 @@ h1 {
 
 .panier {
     position: relative;
-    top:10px;
-    left:73px;
+    top: 10px;
+    left: 73px;
     border: 1px solid #000;
-    border-radius:50% 0 0 0;
+    border-radius: 50% 0 0 0;
     padding: 0;
     margin: 0;
     height: 200px;
     width: 300px;
-    background:url(/assets/img/panier.jpg);
+    background: url(/assets/img/panier.jpg);
 }
 
 .promo {
     font-size: 3em;
-    color:var(--jaune);
+    color: var(--jaune);
     font-weight: 400;
 }
