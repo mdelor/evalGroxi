@@ -172,6 +172,16 @@ nav ul:last-of-type li:last-of-type {
     padding: 2px;
 }
 
+nav ul:first-of-type a{
+    color:#000;
+    padding: 5px 10px;
+}
+
+nav ul:first-of-type a:hover {
+    background-color: #000;
+    color:#f2f3f5;
+}
+
 /*end headbar*/
 
 /*banner */
@@ -214,6 +224,7 @@ h1 {
 .box {
     width: 32%;
     aspect-ratio: 1.4;
+    cursor: pointer;
 }
 
 .box div:first-of-type {
@@ -237,18 +248,39 @@ h1 {
 
 .mainbar p {
     text-transform: uppercase;
+    width: fit-content;
+    scale: 1;
+    transition: 500ms;
+}
+
+.mainbar p:hover {
+    scale: 1.15;
+    background-color: #fff;
 }
 
 .turquoise {
     background: var(--turquoise);
 }
 
+.turquoise p:hover {
+    color: #95dcd6;
+}
+
 .orange {
     background: var(--orange);
+
+}
+
+.orange p:hover {
+    color: #f58313;
 }
 
 .vert {
     background: var(--vert);
+}
+
+.vert p:hover {
+    color: #a0cb23;
 }
 
 /*end three pictures*/
@@ -338,6 +370,14 @@ footer {
     border: 1px solid var(--jaune);
     background-color: var(--vertclair);
     padding: 10px;
+    cursor: pointer;
+    scale: 1;
+    transition: scale, 500ms;
+}
+
+footer:hover {
+    scale: 1.1;
+    box-shadow: var(--vertfoncea) 0px 30px 60px -12px inset, var(--vertfoncea) 0px 18px 36px -18px inset;
 }
 
 footer div:first-of-type {
