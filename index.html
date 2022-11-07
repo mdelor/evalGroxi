@@ -21,28 +21,24 @@
         <!--Containeur bgfruit-->
         <div class="bgfruit"></div>
         <!--Headbar-->
-        <section class="headbar flex spacebetween aligncenter marges">
+        <nav class="headbar flex spacebetween aligncenter marges">
             <img src="assets/img/logo.png" alt="le logo de Groxi Store ">
-            <nav>
-                <ul class="flex spacebetween nostyle">
-                    <li>Accueil</li>
-                    <li>À propos</li>
-                    <li>Boutique</li>
-                    <li>Pages</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-            <div>
-                <p
-                    aria-label="Quatres icones pour rechercher un produit, accéder à votre compte, accéder à vos favoris et enfin accéder à votre panier.">
-                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                    <i class="fa-solid fa-user" aria-hidden="true"></i>
-                    <i class="fa-solid fa-heart" aria-hidden="true"></i>
-                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
-                </p>
-            </div>
-        </section>
+            <ul class="flex spacebetween nostyle">
+                <li>Accueil</li>
+                <li>À propos</li>
+                <li>Boutique</li>
+                <li>Pages</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+            <ul aria-label="Quatres icones pour rechercher un produit, accéder à votre compte, accéder à vos favoris et enfin accéder à votre panier."
+                class="flex spacebetween nostyle">
+                <li><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></li>
+                <li><i class="fa-solid fa-user" aria-hidden="true"></i></li>
+                <li><i class="fa-solid fa-heart" aria-hidden="true"></i></li>
+                <li><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></li>
+            </ul>
+        </nav>
         <!--Banner-->
         <section class="banner flex column justifyend marges">
             <div>
@@ -58,30 +54,28 @@
     </header>
     <main>
         <section class="mainbar flex spacebetween marges">
-            <div class="flex row spacebetween box turquoise">
+            <div class="flex column spacearound box turquoise relative">
                 <div>
                     <h2>Trouvez vos légumes préferés</h2>
                     <p>J'en profite <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
-                <!-- Container img CSS-->
-                <div></div>
+                <img src="/assets/img/legumes.png" alt="un sac de légumes">
             </div>
-            <div class="flex row spacebetween box orange">
+            <div class="flex column spacearound box orange relative">
                 <div>
                     <h2>Notre meilleur sélection de boissons</h2>
                     <p>J'en profite <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
-                <!-- Container img CSS-->
-                <div></div>
+                <img src="/assets/img/boisson.png" alt="une bouteille d ejus de pamplemousse">
             </div>
-            <div class="flex row spacebetween box vert">
+            <div class="flex column spacearound box vert relative">
                 <div>
                     <h2>Produits beauté et santé</h2>
                     <p>J'en profite <i class="fa-solid fa-arrow-right"></i></p>
                 </div>
-                <!-- Container img CSS-->
-                <div></div>
+                <img src="/assets/img/beaute.png" alt="des produits de beauté">
             </div>
+
         </section>
         <div class="populaires textcenter">
             <p>Les plus populaires</p>
@@ -104,7 +98,7 @@
                     <p><span class="barre">15€‎</span> <span class="verttext">12€‎</span></p>
                     <p class="btn1 vertfonce">Ajouter</p>
                 </div>
-                <div class="box2 flex column center">
+                <div class="box2 flex column center relative liked">
                     <div class="heart flex center"><i class="fa-solid fa-heart"></i></div>
                     <img src="/assets/img/broccoli.png" alt="des broccolis">
                     <ul class="flex justifycenter etoiles">
@@ -116,9 +110,9 @@
                     </ul>
                     <p>Broccolis</p>
                     <p><span class="barre">20€‎</span> <span class="verttext">15€‎</span></p>
-                    <p class="btn1 vertfonce">Ajouter</p>
+                    <p class="btn1 vertclair">Ajouter</p>
                 </div>
-                <div class="box2 flex column center">
+                <div class="box2 flex column center relative">
                     <div class="heart flex center"><i class="fa-solid fa-heart"></i></div>
                     <img src="/assets/img/fraises.png" alt="des fraises">
                     <ul class="flex justifycenter etoiles">
@@ -134,7 +128,7 @@
                 </div>
             </div>
             <div class="flex spacebetween">
-                <div class="box2 flex column center">
+                <div class="box2 flex column center relative">
                     <div class="heart flex center"><i class="fa-solid fa-heart"></i></div>
                     <img src="/assets/img/miel.png" alt="un pot de miel">
                     <ul class="flex justifycenter etoiles">
@@ -148,7 +142,7 @@
                     <p><span class="barre">50€‎</span> <span class="verttext">40€‎</span></p>
                     <p class="btn1 vertfonce">Ajouter</p>
                 </div>
-                <div class="box2 flex column center">
+                <div class="box2 flex column center relative">
                     <div class="heart flex center"><i class="fa-solid fa-heart"></i></div>
                     <img src="/assets/img/lait.png" alt="une bouteille de lait">
                     <ul class="flex justifycenter etoiles">
@@ -162,7 +156,7 @@
                     <p><span class="barre">10€‎</span> <span class="verttext">08€‎</span></p>
                     <p class="btn1 vertfonce">Ajouter</p>
                 </div>
-                <div class="box2 flex column center">
+                <div class="box2 flex column center relative">
                     <div class="heart flex center"><i class="fa-solid fa-heart"></i></div>
                     <img src="/assets/img/mangue.png" alt="un verre de jus de mangue">
                     <ul class="flex center etoiles">
@@ -178,12 +172,12 @@
                 </div>
             </div>
         </section>
-        <section class="foot flex spacearound aligncenter">
-            <div>
-                <p><span class="promo">50%</span> de réduction</p>
-                <p>J'en profite <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-            <div>
+        <section class="foot relative">
+            <div class="flex spacearound aligncenter">
+                <div>
+                    <p><span class="promo">50%</span> de réduction</p>
+                    <p>J'en profite <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
                 <h3>Les produits les plus populaires</h3>
             </div>
             <div class="panier"></div>
