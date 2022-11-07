@@ -90,6 +90,7 @@ a {
     padding: 15px 20px;
     font-size: 1.1em;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .vertclair {
@@ -126,35 +127,49 @@ header {
     height: 900px;
 }
 
-.headbar ul:first-of-type {
-    width: 40%;
+nav ul:first-of-type {
+    width: 50%;
 }
 
-.headbar ul:last-of-type {
-    width: 15%;
+nav ul:last-of-type {
+    width: 20%;
 }
 
-.headbar li {
+nav li {
     cursor: pointer;
 }
 
-.headbar div:first-of-type li:hover {
+nav div:first-of-type li:hover {
     background: #000;
     color: #fff;
 }
 
-.headbar i {
+nav i {
     border-radius: 50%;
     background: #fff;
-    padding: 10px;
-    font-size: 0.8em;
+    padding: 12px;
+    font-size: 1em;
     color: var(--vertclair);
 }
 
-.headbar i:hover {
+nav i:hover {
     cursor: pointer;
     background: var(--vertclair);
     color: #fff;
+}
+
+nav ul:last-of-type li:last-of-type {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.6rem;
+    text-align: center;
+    background: var(--vertfonce);
+    color: #fff;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    padding: 2px;
 }
 
 /*end headbar*/
@@ -253,7 +268,7 @@ h1 {
     font-size: 2em;
 }
 
-.box2 span:first-of-type{
+.box2 span:first-of-type {
     text-decoration: line-through;
     color: rgb(85, 85, 85);
 }
@@ -289,6 +304,7 @@ h1 {
     color: grey;
     background-color: #fff;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .hot {
