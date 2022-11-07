@@ -364,7 +364,7 @@ footer p:nth-of-type(2) {
     margin: 0;
     height: 100%;
     width: 25%;
-    background: url(/assets/img/panier.jpg);
+    background: url(../img/panier.jpg);
 }
 
 .promo {
