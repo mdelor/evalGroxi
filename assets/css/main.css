@@ -108,15 +108,6 @@ a {
     box-shadow: var(--vertclaira) 0px 30px 60px -12px inset, var(--vertclaira) 0px 18px 36px -18px inset;
 }
 
-.barre {
-    text-decoration: line-through;
-    color: rgb(85, 85, 85);
-}
-
-.verttext {
-    color: var(--vertclair);
-}
-
 /* end helpers */
 
 /* Headbar */
@@ -262,6 +253,15 @@ h1 {
     font-size: 2em;
 }
 
+.box2 span:first-of-type{
+    text-decoration: line-through;
+    color: rgb(85, 85, 85);
+}
+
+.box2 span:last-of-type {
+    color: var(--vertclair);
+}
+
 .etoiles {
     list-style-type: none;
     padding: 0;
@@ -316,7 +316,7 @@ h1 {
 
 /*start final bloc*/
 
-.foot {
+footer {
     margin: 50px 21%;
     color: #fff;
     border: 1px solid var(--jaune);
@@ -324,16 +324,16 @@ h1 {
     padding: 10px;
 }
 
-.foot div:first-of-type {
+footer div:first-of-type {
     width: 60%;
 }
 
-.foot h3 {
+footer h3 {
     font-size: 2.5em;
     font-weight: 400;
 }
 
-.foot p:nth-of-type(2) {
+footer p:nth-of-type(2) {
     text-transform: uppercase;
 }
 
