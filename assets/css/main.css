@@ -445,20 +445,32 @@ footer p:nth-of-type(2) {
         display: block;
     }
 
-    nav {
-        height: 500px;
+    .side-menu:checked~ul {
+        height: 300px;
+        width: 80%;
+        background-color: #fff;
+        border: 1px solid #000;
     }
 
-    nav ul {
+    header nav ul {
+        justify-content: flex-start;
+        align-items: center;
+        margin:0;
+        padding: 0;
+        width: 100%;
+    }
+
+    header nav ul:first-of-type {
         flex-direction: column;
     }
-
-    nav 
 
     /*end mobile nav */
 
     .btnh {
         display: inline;
+        position: absolute;
+        top: 90px;
+        right: 20px;
     }
 
     .marges {
@@ -474,18 +486,21 @@ footer p:nth-of-type(2) {
     header {
         height: fit-content;
         background: cover;
-        }
-
-    header nav {
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        height: 50px;
     }
 
+    header nav {
+        margin:0;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    header nav ul:first-of-type {
+        margin-top: 150px;
+    }
     header nav ul li {
-        width: 0;
-        height: 0;
         display: none;
     }
 
@@ -501,15 +516,15 @@ footer p:nth-of-type(2) {
         justify-content: flex-start;
     }
 
-    .banner div:last-child{
+    .banner div:last-child {
         justify-content: space-between;
         width: 100%;
     }
 
     .btn1 {
-        padding: 5px 10px;
+        padding: 10px;
         width: 42%;
-        max-width:fit-content;
+        max-width: fit-content;
     }
 
     /*end header*/
@@ -549,9 +564,12 @@ footer p:nth-of-type(2) {
 
     footer {
         height: 600px;
-        max-width: 360px;
-        margin:50px auto;
-        
+        max-width: 330px;
+        margin: 50px auto;
+    }
+
+    footer:hover {
+        scale: 1;
     }
 
     footer div:first-of-type {
