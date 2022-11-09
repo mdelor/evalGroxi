@@ -125,6 +125,7 @@ a {
 header {
     background: url(../img/banner.jpg);
     height: 900px;
+    width: 100%;
 }
 
 nav ul:first-of-type {
@@ -172,14 +173,14 @@ nav ul:last-of-type li:last-of-type {
     padding: 2px;
 }
 
-nav ul:first-of-type a{
-    color:#000;
+nav ul:first-of-type a {
+    color: #000;
     padding: 5px 10px;
 }
 
 nav ul:first-of-type a:hover {
     background-color: #000;
-    color:#f2f3f5;
+    color: #f2f3f5;
 }
 
 /*end headbar*/
@@ -414,3 +415,68 @@ footer p:nth-of-type(2) {
 }
 
 /* end final block */
+
+/*media queries */
+
+/*mobile devices */
+@media only screen and (max-width: 768px) {
+
+    /*start three pictures*/
+
+    .mainbar {
+        flex-direction: column;
+        height: fit-content;
+        margin: 0;
+    }
+
+    .box {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        max-height: 255px;
+        max-width: 418px;
+    }
+
+    /*end three pictures*/
+
+    /*start popular products*/
+
+    main section:last-of-type{
+        margin:5px;
+    }
+
+    .produits {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    /*end popular products*/
+
+    /*start final bloc*/
+
+    footer {
+        height:600px;
+        margin:5%;
+    }
+
+    footer div:first-of-type{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .panier {
+        width: 95%;
+        height: 40%;
+    }
+
+    /* end final block */
+}
+/*end mobile devices */
+
+/*start tablets devices*/
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+
+}
+
+/*end tablets devices*/
