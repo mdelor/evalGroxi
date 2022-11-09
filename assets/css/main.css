@@ -3,7 +3,7 @@
 
 /* page properties */
 
-html {
+:root {
     font-size: 16px;
     --vertclair: #a0cb23;
     --vertclaira: rgba(160, 203, 35, 0.5);
@@ -113,6 +113,11 @@ a {
 
 /* Headbar */
 
+.side-menu,
+.btnh {
+    display: none;
+}
+
 .bgfruit {
     background-image: url('../img/bg_fruit.png');
     width: 336px;
@@ -120,6 +125,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
+    transform-origin: top left;
 }
 
 header {
@@ -148,9 +154,9 @@ nav div:first-of-type li:hover {
 nav i {
     border-radius: 50%;
     background: #fff;
+    color: var(--vertclair);
     padding: 12px;
     font-size: 1em;
-    color: var(--vertclair);
 }
 
 nav i:hover {
@@ -418,15 +424,101 @@ footer p:nth-of-type(2) {
 
 /*media queries */
 
+
+
 /*mobile devices */
 @media only screen and (max-width: 768px) {
+
+    /*start mobile nav */
+
+    .side-menu:checked~label i {
+        background: var(--vertclair);
+        color: #fff;
+    }
+
+    .side-menu:checked~label i:hover {
+        background: #fff;
+        color: var(--vertclair);
+    }
+
+    .side-menu:checked~ul li {
+        display: block;
+    }
+
+    nav {
+        height: 500px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav 
+
+    /*end mobile nav */
+
+    .btnh {
+        display: inline;
+    }
+
+    .marges {
+        margin: 0 5%;
+    }
+
+    /*start header*/
+
+    .bgfruit {
+        scale: 0.5;
+    }
+
+    header {
+        height: fit-content;
+        background: cover;
+        }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        height: 50px;
+    }
+
+    header nav ul li {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    header nav img {
+        position: absolute;
+        top: 10px;
+        right: 5%;
+    }
+
+    .banner {
+        width: 80%;
+        margin: 50px auto;
+        justify-content: flex-start;
+    }
+
+    .banner div:last-child{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .btn1 {
+        padding: 5px 10px;
+        width: 42%;
+        max-width:fit-content;
+    }
+
+    /*end header*/
 
     /*start three pictures*/
 
     .mainbar {
         flex-direction: column;
         height: fit-content;
-        margin: 0;
     }
 
     .box {
@@ -441,8 +533,8 @@ footer p:nth-of-type(2) {
 
     /*start popular products*/
 
-    main section:last-of-type{
-        margin:5px;
+    .populaires {
+        width: 100%;
     }
 
     .produits {
@@ -456,11 +548,13 @@ footer p:nth-of-type(2) {
     /*start final bloc*/
 
     footer {
-        height:600px;
-        margin:5%;
+        height: 600px;
+        max-width: 360px;
+        margin:50px auto;
+        
     }
 
-    footer div:first-of-type{
+    footer div:first-of-type {
         flex-direction: column;
         width: 100%;
     }
@@ -472,11 +566,10 @@ footer p:nth-of-type(2) {
 
     /* end final block */
 }
+
 /*end mobile devices */
 
 /*start tablets devices*/
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-
-}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {}
 
 /*end tablets devices*/
