@@ -219,3 +219,56 @@ nav div ul:first-of-type a:hover {
 }
 
 /* end liked properties */
+
+/*start final bloc*/
+
+footer {
+    margin: 50px 21%;
+    color: #fff;
+    border: 1px solid var(--jaune);
+    background-color: var(--vertclair);
+    padding: 10px;
+    cursor: pointer;
+    scale: 1;
+    transition: scale, 500ms;
+}
+
+footer:hover {
+    scale: 1.1;
+    box-shadow: var(--vertfoncea) 0px 30px 60px -12px inset, var(--vertfoncea) 0px 18px 36px -18px inset;
+}
+
+footer div:first-of-type {
+    width: 60%;
+}
+
+footer h3 {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+footer p:nth-of-type(2) {
+    text-transform: uppercase;
+}
+
+.panier {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 100% 0 0 0;
+    border-top: 2px solid var(--vertjaune);
+    border-left: 20px solid var(--vertjaune);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 25%;
+    background: url(../img/panier.jpg);
+}
+
+.promo {
+    font-size: 3em;
+    color: var(--jaune);
+    font-weight: 400;
+}
+
+/* end final block */
