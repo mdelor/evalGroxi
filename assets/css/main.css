@@ -59,7 +59,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    height: 90vh;
+    height: 500px;
 }
 
 @media (max-width: 992px) {
@@ -101,7 +101,7 @@ nav div ul:first-of-type a:hover {
 /* start banner */
 
 .banner {
-    height: 60%;
+    height: 80%;
 }
 
 .btncarre {
@@ -126,7 +126,7 @@ nav div ul:first-of-type a:hover {
 .bullet>div {
     color: #fff;
     position: relative;
-    min-height: 300px;
+    height: 300px;
 }
 
 .bullet div div {
