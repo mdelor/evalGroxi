@@ -40,11 +40,31 @@ a {
     color: var(--vertfonce);
 }
 
-/* navbar */
+/*start backgrounds top*/
+
+.bgfruit {
+    background-image: url(../img/bg_fruit.png) ;
+    background-size:contain ;
+    background-repeat:no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    height: 40vh;
+}
 
 header {
-    background: var(--gris);
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 90vh;
 }
+
+/*end background top*/
+
+/* navbar */
 
 .nav-link i {
     color: var(--vertclair);
@@ -71,6 +91,29 @@ nav div ul:first-of-type a:hover {
 }
 
 /* end navbar */
+
+/* start banner */
+
+.banner {
+    height: 60%;
+}
+
+.btncarre {
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+    width: fit-content;
+}
+
+.clair {
+    background-color: var(--vertclair);
+}
+
+.fonce {
+    background-color: var(--vertfonce);
+}
+
+/* end banner */
 
 /*bullet points */
 
@@ -130,7 +173,7 @@ nav div ul:first-of-type a:hover {
     right: 10px;
     color: var(--vertfonce);
     background: #fff;
-    border-radius: 50% ;
+    border-radius: 50%;
     font-size: 0.8em;
     padding: 5%;
 }
@@ -141,5 +184,14 @@ nav div ul:first-of-type a:hover {
     left: 0;
     color: #fff;
     background: var(--rougehot);
-    padding:5px 10px;
+    padding: 5px 10px;
+}
+
+.box-products p span:first-of-type {
+    text-decoration: line-through;
+    color: rgb(50, 50, 50);
+}
+
+.box-products p span:last-of-type {
+    color: var(--vertclair);
 }
