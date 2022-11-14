@@ -31,12 +31,20 @@ a {
 
 /* end page properties */
 
-.spacebetween {
-    justify-content: space-between;
+/*start helpers */
+
+.vertclair {
+    color: var(--vertclair);
 }
 
+.vertfonce {
+    color: var(--vertfonce);
+}
+
+/* navbar */
+
 .nav-link i {
-    color:var(--vertclair);
+    color: var(--vertclair);
     background: #fff;
     border-radius: 50%;
     font-size: 0.8em;
@@ -57,4 +65,47 @@ nav div ul:first-of-type a {
 nav div ul:first-of-type a:hover {
     color: #fff;
     background: #000;
+}
+
+/* end navbar */
+
+/*bullet points */
+
+.bullet>div {
+    color: #fff;
+    position: relative;
+    min-height: 300px;
+}
+
+.bullet div div {
+    max-width: 40%;
+}
+
+.bullet img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 95%;
+    max-width: 70%;
+}
+
+.bullet>div:nth-child(1) {
+    background: var(--turquoise);
+}
+
+.bullet>div:nth-child(2) {
+    background: var(--orange);
+}
+
+.bullet>div:nth-child(3) {
+    background: var(--vert);
+}
+
+/* end bullet points */
+
+/*start products */
+
+.box-products {
+    max-width: 300px;
+    
 }
