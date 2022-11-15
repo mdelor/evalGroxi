@@ -169,7 +169,8 @@ nav div ul:first-of-type a:hover {
 .box-products img{
     padding-top: 45px;
     padding-bottom: 10px;
-    height:200px ;
+    height:200px;
+    max-width: 100%;
 }
 
 .box-products ul {
