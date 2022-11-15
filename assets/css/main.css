@@ -59,7 +59,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    height: 500px;
+    height: 90vh;
 }
 
 @media (max-width: 992px) {
