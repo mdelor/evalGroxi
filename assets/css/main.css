@@ -1,3 +1,9 @@
+/* Import police Portfolio */
+@font-face {
+    font-family: "PanPizza";
+    src: url(../font/panpizza.woff2);
+}
+
 /* Google Fonts Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -371,7 +377,7 @@ h1 {
 
 /*start final bloc*/
 
-footer {
+.footer {
     margin: 50px 21%;
     color: #fff;
     border: 1px solid var(--jaune);
@@ -382,21 +388,21 @@ footer {
     transition: scale, 500ms;
 }
 
-footer:hover {
+.footer:hover {
     scale: 1.1;
     box-shadow: var(--vertfoncea) 0px 30px 60px -12px inset, var(--vertfoncea) 0px 18px 36px -18px inset;
 }
 
-footer div:first-of-type {
+.footer div:first-of-type {
     width: 60%;
 }
 
-footer h3 {
+.footer h3 {
     font-size: 2.5em;
     font-weight: 400;
 }
 
-footer p:nth-of-type(2) {
+.footer p:nth-of-type(2) {
     text-transform: uppercase;
 }
 
@@ -422,9 +428,32 @@ footer p:nth-of-type(2) {
 
 /* end final block */
 
+/* footer Portfolio */
+footer {
+    margin: 0;
+    color:#fff;
+    background-color: #000;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+footer p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+footer a {
+    font-family: "PanPizza", serif;
+    font-size: 2em;
+    color : #fff;
+}
+/*end footer Portfolio */
+
 /*media queries */
-
-
 
 /*mobile devices */
 @media only screen and (max-width: 768px) {
@@ -562,17 +591,17 @@ footer p:nth-of-type(2) {
 
     /*start final bloc*/
 
-    footer {
+    .footer {
         height: 600px;
         max-width: 330px;
         margin: 50px auto;
     }
 
-    footer:hover {
+    .footer:hover {
         scale: 1;
     }
 
-    footer div:first-of-type {
+    .footer div:first-of-type {
         flex-direction: column;
         width: 100%;
     }
@@ -591,3 +620,4 @@ footer p:nth-of-type(2) {
 @media only screen and (min-width: 769px) and (max-width: 1200px) {}
 
 /*end tablets devices*/
+
