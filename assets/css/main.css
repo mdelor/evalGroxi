@@ -431,9 +431,14 @@ h1 {
 /* footer Portfolio */
 footer {
     margin: 0;
-    color:#fff;
+    color: #fff;
     background-color: #000;
+
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
 }
+
 
 footer div {
     display: flex;
@@ -441,6 +446,7 @@ footer div {
     width: 50%;
     margin: auto;
 }
+
 footer p {
     margin: 0;
     padding: 5px 0;
@@ -449,8 +455,9 @@ footer p {
 footer a {
     font-family: "PanPizza", serif;
     font-size: 2em;
-    color : #fff;
+    color: #fff;
 }
+
 /*end footer Portfolio */
 
 /*media queries */
@@ -484,7 +491,7 @@ footer a {
     header nav ul {
         justify-content: flex-start;
         align-items: center;
-        margin:0;
+        margin: 0;
         padding: 0;
         width: 100%;
     }
@@ -518,7 +525,7 @@ footer a {
     }
 
     header nav {
-        margin:0;
+        margin: 0;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
@@ -529,6 +536,7 @@ footer a {
     header nav ul:first-of-type {
         margin-top: 150px;
     }
+
     header nav ul li {
         display: none;
     }
@@ -620,4 +628,3 @@ footer a {
 @media only screen and (min-width: 769px) and (max-width: 1200px) {}
 
 /*end tablets devices*/
-
